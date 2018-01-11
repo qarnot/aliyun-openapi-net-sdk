@@ -139,7 +139,7 @@ namespace Aliyun.Acs.Core.Http
             HttpWebRequest httpWebRequest = null;
             if (request.Url.Contains("https"))
             {
-                ServicePointManager.ServerCertificateValidationCallback = new RemoteCertificateValidationCallback(CheckValidationResult);
+//                ServicePointManager.ServerCertificateValidationCallback = new RemoteCertificateValidationCallback(CheckValidationResult);
                 httpWebRequest = (HttpWebRequest)WebRequest.CreateDefault(new Uri(request.Url));
             }
             else
